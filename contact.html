@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Карьера - Обо мне</title>
+	<title>Контакты</title>
 
 	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
@@ -17,7 +17,11 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
 
+	<link rel="stylesheet" type="text/css" href="contact-form/formValidator/validationEngine.jquery.css" />
+
 	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="screen" href="css/ie-fix.css" /><![endif]-->
+
+	<?=$css?>
 
 	<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
 
@@ -34,6 +38,9 @@
 	<script type="text/javascript" src="js/jquery.quicksand-config.js"></script>
 
 	<script type="text/javascript" src="js/scripts.js"></script>
+
+	<script type="text/javascript" src="contact-form/formValidator/jquery.validationEngine.js"></script>
+	<script type="text/javascript" src="contact-form/script.js"></script>
 
 </head>
 
@@ -53,8 +60,8 @@
 						<li><a href="index.html">Резюме</a></li>
 						<li><a href="portfolio.html">Портфолио</a></li>
 						<li><a href="project.html">Проекты</a></li>
-						<li class="current"><a href="about.html">Обо мне</a></li>
-						<li><a href="contact.html">Контакты</a></li>
+						<li><a href="about.html">Обо мне</a></li>
+						<li class="current"><a href="contact.html">Контакты</a></li>
 					</ul>
 
 					<div class="clear"></div>
@@ -63,66 +70,23 @@
 
 				<div id="stripe"></div>
 
-				<div id="about" class="clearfix">
+				<ul id="contact-columns" class="clearfix">
 
-					<img src="img/sample/photo.png" alt="" title="">
+					<li>
+						<img src="img/phone-icon.png" alt="" title="">
+						<p></p>
+						<a href="https://alphabetazeta.t.me/">Telegram</a></p>
+					</li>
 
-					<h2>Несколько слов обо мне</h2>
+					<li>
+						<img src="img/mail-icon.png" alt="" title="">
+						<p><a href="mailto:pavelplaton@gmail.com">pavelplaton@gmail.com</a></p>
+					</li>
 
-					<p class="about-text">Образование высшее - экономическое, с IT технологиями
-						имею дело много лет, всего по-немногу, от поиска программных неисправностей
-						в логах, до работы в графических/3д редакторах и подобных.
-						Обучался на manual QA в 2021 году. Обучаюсь на QA automation с применением ЯП
-						Python + Selenium в качестве team lead группы 14 человек. В будущем вижу себя
-						QA automation с навыками программирования на Python.
-					</p>
 
-					<blockquote class="about-me">
-						<div class="quote-top"></div>
-						&#8220;Жизнь состоит не в том, чтобы найти себя. Жизнь состоит в том, чтобы создать себя.
-						&#8220;
-						<p class="quote-author">Джордж Бернард Шоу </p>
-					</blockquote>
+				</ul><!-- contact-columns end -->
 
-				</div><!-- about end -->
 
-				<div id="about-middle" class="clearfix">
-
-					<div id="content-left">
-
-						<div class="clearfix">
-							<h2>Мои навыки</h2>
-						</div>
-
-						<ul id="chart">
-							<li class="three">Python</li>
-							<li class="three">Confluence</li>
-							<li class="five">GitHub</li>
-							<li class="four">QA theory</li>
-							<li class="two">HTML5</li>
-						</ul>
-
-						<div id="axis"></div>
-
-					</div><!-- content-left end -->
-
-					<div id="content-right">
-
-						<div class="clearfix">
-							<h2>Что я умею</h2>
-						</div>
-
-						<ul id="check">
-							<li>Писать чек-листы/тест кейсы</li>
-							<li>Заводить баг-репорты/улучшения</li>
-							<li>Учусь писать автотесты</li>
-							<li>Находить баги</li>
-							<li class="last">Гуглить</li>
-						</ul>
-
-					</div><!-- content-right end -->
-
-				</div><!-- about-middle end -->
 
 			</div><!-- content-innertube end -->
 
@@ -135,6 +99,7 @@
 						<ul>
 							<li>Россия</li>
 							<li>Волгоград</li>
+							<!-- <li>My Country</li> -->
 						</ul>
 					</div><!-- footer-address end -->
 
@@ -155,10 +120,10 @@
 						</ul>
 					</div><!-- footer-social end -->
 
-					<!-- <div id="footer-resume">
+					<div id="footer-resume">
 						<h5>Резюме</h5>
 						<div id="Скачать резюме"><a href="#"></a></div>
-					</div>footer-resume end -->
+					</div><!-- footer-resume end -->
 
 					<div class="clear"></div>
 
