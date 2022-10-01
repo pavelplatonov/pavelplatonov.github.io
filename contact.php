@@ -1,32 +1,3 @@
-
-session_name("fancyform");
-session_start();
-
-
-$_SESSION['n1'] = rand(1,20);
-$_SESSION['n2'] = rand(1,20);
-$_SESSION['expect'] = $_SESSION['n1']+$_SESSION['n2'];
-
-
-$str='';
-if($_SESSION['errStr'])
-{
-	$str='<div class="error">'.$_SESSION['errStr'].'</div>';
-	unset($_SESSION['errStr']);
-}
-
-$success='';
-if($_SESSION['sent'])
-{
-	$success='<h1 class="mail-sent">Thank you!</h1>';
-	
-	$css='<style type="text/css">#contact-form{display:none;}</style>';
-	
-	unset($_SESSION['sent']);
-}
-
-?> -->
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -95,7 +66,6 @@ if($_SESSION['sent'])
 
 			</div><!-- header end -->
 			
-			<!-- <div id="text"><img src="img/contact.png" alt="" title=""></div> -->
 			<div id="stripe"></div>
 			
 			<ul id="contact-columns" class="clearfix">
@@ -137,7 +107,6 @@ if($_SESSION['sent'])
 							<li><a href="https://github.com/pavelplatonov" title="Мой GitHub">Мой GitHub</a></li>
 							<li><a href="mailto:pavelplaton@gmail.com"
 									title="Напиши мне на email">pavelplaton@gmail.com</a></li>
-							<!-- <li><a href="contact.php">Contact form<span class="raquo">&#187;</span></a></li> -->
 						</ul>
 					</div><!-- footer-contact end -->
 
@@ -146,8 +115,6 @@ if($_SESSION['sent'])
 						<ul>
 							<li><a href="https://alphabetazeta.t.me/" title="Telegram"><img src="img/logo.png"
 										width="50" height="50" alt="Telegram" title="Мой телеграм профиль"></a></li>
-							<!-- <li><a href="#" title=""><img src="img/linkedin.png" alt="linkedin"
-										title="My Linkedin profile"></a></li> -->
 						</ul>
 					</div><!-- footer-social end -->
 
